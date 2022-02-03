@@ -53,12 +53,10 @@ public class Banka {
     public void izvrsavanjeZahteva (){
 
         ZahtevZaTransfer z = nizZahteva.get(0);
+        nizZahteva.remove(0);
         if (!z.izvrsiZahtev()){
             System.out.println(z);
             System.out.println("Ispisani zahtev nije moguce izvrsiti.");
-        }else {
-
-            nizZahteva.remove(0);
         }
     }
 }
