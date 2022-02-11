@@ -33,6 +33,8 @@ public class BasePage {
     public Forms forms;
     public AlertsFramesAndWindows alertsFramesAndWindows;
     public BrowserWindows browserWindows;
+    public AlertsTab alertsTab;
+    public ModalDialogs modalDialogs;
 
 
 
@@ -59,6 +61,8 @@ public class BasePage {
         forms = new Forms(driver,wait);
         alertsFramesAndWindows = new AlertsFramesAndWindows(driver,wait);
         browserWindows = new BrowserWindows(driver,wait);
+        alertsTab = new AlertsTab(driver,wait);
+        modalDialogs = new ModalDialogs(driver,wait);
     }
 
     public void scrollMethod (WebElement we) {
